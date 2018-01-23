@@ -1,0 +1,37 @@
+// INPUTS & FORMS
+
+input {
+  @include border-radius();
+
+  font-size: 1.5rem;
+  line-height: 6rem;
+  outline: 0;
+  padding: 0 10px;
+  width: 100%;
+
+  &::placeholder {
+    text-transform: capitalize;
+  }
+}
+
+.form-input-group {
+  @include border-radius();
+
+  background: white;
+  margin-bottom: 25px;
+  margin: 0 auto 30px;
+
+  input {
+    border: 0;
+    border-bottom: 1px solid $border;
+  }
+
+  input:first-child {
+    @include border-radius(5px 5px 0 0);
+  }
+
+  input:last-child {
+    @include border-radius(0 0 5px 5px);
+    border-bottom: 0;
+  }
+}

@@ -1,0 +1,57 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+// COLORS & VARS
+
+$dark_grey: #1B2733;
+
+$accent: #5A84AB;
+$accent_red: #E98176;
+$accent_orange: #EDA175;
+$accent_yellow: #FECE8F;
+
+$bg: #1B2733;
+$dark_bg: #10181F;
+$light_bg: #fbfbfc;
+
+$link: #38536B;
+$border: #e0e0e0;
+
+
+// UTILS
+
+@import "reset";
+@import "css3";
+
+// LAYOUTS
+
+@import "layouts/landing";
+@import "layouts/dashboard";
+
+// PARTIALS
+
+@import "partials/forms";
+@import "partials/button";
+@import "partials/link";
+@import "partials/typography";
+
+// PARTIAL COMPONENTS
+
+// @import "components/header";
+
+.container {
+  margin: 0 auto;
+}
+
+// CLEARFIX FOR MODERN BROWSERS (IE 8+)
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}

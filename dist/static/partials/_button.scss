@@ -1,0 +1,32 @@
+// BUTTONS
+
+button, input[type="submit"], .button {
+  @include border-radius();
+
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.06rem;
+  line-height: 7rem;
+  padding: 0 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: auto;
+
+  &.accent {
+    background: $accent;
+    color: white;
+    border: 2px solid $accent;
+
+    &:hover, &:focus {
+      @include transition(background, 0.2s);
+
+      background: lighten($accent, 4%);
+      cursor: pointer;
+    }
+
+    &:active {
+      background: darken($accent, 5%);
+    }
+  }
+}
